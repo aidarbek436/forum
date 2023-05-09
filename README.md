@@ -12,7 +12,7 @@ This project consists in creating a web forum that allows :
 ```
 go run ./cmd/main.go
 ```
-on this moment u start forum on 1999 port
+web application starts on 1999 port
 
 ### How to use ###
 
