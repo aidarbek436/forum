@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Post</title>
+	<style>
+		.container {
+			margin: 0 auto;
+			width: 50%;
+			padding: 10px;
+		}
+		.form-control {
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid gray;
+			margin-bottom: 10px;
+		}
+		.form-group label {
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.btn:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Create Post</h1>	
+		<form method="POST" action="/createpost">
+			<div class="form-group">
+				<label for="title">Title:</label>
+				<input type="text" class="form-control" id="title" name="title" required>
+			</div>
+			<div class="form-group">
+				<label for="content">Content:</label>
+				<textarea class="form-control" id="content" name="content" rows="10" required></textarea>
+			</div>
+			<label>Categories:</label><br>
+			<h1>Post should have AT LEAST ONE catetory</h1>
+			<input type="checkbox" id="sport" name="option" value="sport">
+			<label for="sport">Sport</label><br>
+			
+			<input type="checkbox" id="history" name="option" value="history">
+			<label for="history">History</label><br>
+			
+			<input type="checkbox" id="politics" name="option" value="politics">
+			<label for="politics">Politics</label><br>
+			
+			<input type="checkbox" id="science" name="option" value="science">
+			<label for="science">Science</label><br>
+			
+			<input type="checkbox" id="art" name="option" value="art">
+			<label for="art">Art</label><br><br>
+			<button type="submit" class="btn">Create Post</button>
+		</form>
+	</div>
+</body>
+</html>

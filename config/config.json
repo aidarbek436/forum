@@ -1,0 +1,14 @@
+{
+    "app": {
+        "server_address": "http://localhost:1999"
+    },
+    "http": {
+        "port": ":1999",
+        "idle_timeout": 30,
+        "write_timeout": 30,
+        "read_timeout": 30
+    },
+    "database": {
+        "db_name": "forum.db"
+    }
+}
